@@ -64,4 +64,4 @@ POJO2EmberData converter = new POJO2EmberData(config);
 converter.convert(); // Your models will be generated in the generated_models dir
 ```
 
-Check on the test classes for more detailed examples.
+Check out the test classes for more detailed examples.
