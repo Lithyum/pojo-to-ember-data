@@ -59,7 +59,7 @@ Here's a basic usage example :
 ```java
 String[] packagesToScan = new String[] { "org.yourcompany.yourproject" };
 String emberModelNamespace = "App";
-Config config = new Config(PACKAGES_TO_SCAN, EMBER_MODEL_NAMESPACE);
+Config config = new Config(packagesToScan, emberModelNamespace);
 POJO2EmberData converter = new POJO2EmberData(config);
 converter.convert(); // Your models will be generated in the generated_models dir
 ```
