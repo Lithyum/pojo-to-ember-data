@@ -54,7 +54,10 @@ public class ClassConverter {
 
         for (Field field : fields) {
             if (!shouldIgnoreField(field)) {
-                emberAttributes.add(EmberAttribute.fromField(config, field));
+                EmberAttribute emberAttribute = EmberAttribute.fromField(config, field);
+                if(emberAttribute != null) {
+                    emberAttributes.add(emberAttribute);
+                }
             }
         }
         return emberAttributes;

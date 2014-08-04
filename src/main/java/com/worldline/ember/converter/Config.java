@@ -44,7 +44,6 @@ public class Config {
 
         checkArgument(clazz != null);
         checkArgument(!Strings.isNullOrEmpty(fieldName));
-        checkArgument(!Strings.isNullOrEmpty(customFieldName));
 
         Field field = clazz.getDeclaredField(fieldName);
         customFieldNames.put(field, customFieldName);

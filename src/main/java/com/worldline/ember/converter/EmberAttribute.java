@@ -66,6 +66,11 @@ public class EmberAttribute {
 
     public static EmberAttribute fromField(Config config, Field field) {
         String attributeName = getEmberAttributeName(config, field);
+
+        if(attributeName == null) {
+            return null;
+        }
+
         String type;
         EmberAttribute.AssociationType associationType;
 
